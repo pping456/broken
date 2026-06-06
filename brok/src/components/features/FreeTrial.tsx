@@ -134,8 +134,8 @@ export default function FreeTrial() {
               <div className="flex justify-center mb-5">
                 <div className="w-36 rounded-xl border border-purple-100 p-2 shadow-sm" style={{ background: '#fdf4ff' }}>
                   <div className="flex gap-1 mb-1.5">
-                    <div className="h-2 rounded-sm bg-brand-pink flex-1" opacity={0.6} />
-                    <div className="h-2 rounded-sm bg-brand-purple w-6" opacity={0.5} />
+                    <div className="h-2 rounded-sm bg-brand-pink flex-1" style={{ opacity: 0.6 }} />
+                    <div className="h-2 rounded-sm bg-brand-purple w-6" style={{ opacity: 0.5 }} />
                   </div>
                   <div className="grid grid-cols-3 gap-1 mb-1.5">
                     {['bg-pink-100','bg-purple-100','bg-indigo-100'].map((c,i) => (
