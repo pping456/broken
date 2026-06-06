@@ -117,13 +117,13 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg">
+          <div className="lg:hidden bg-brand-navy shadow-lg">
             <ul className="flex flex-col py-2">
               {navLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="block px-6 py-3 text-sm font-medium text-gray-700 hover:text-brand-pink hover:bg-gray-50"
+                    className="block px-6 py-3 text-sm font-medium text-white hover:text-brand-pink"
                     onClick={(e) => handleNavClick(e, link.href)}
                   >
                     {link.label}
