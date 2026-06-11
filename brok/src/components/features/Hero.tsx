@@ -21,17 +21,17 @@ export default function Hero() {
 
         {/* Dot grid decoration — top right */}
         <div className="absolute top-28 right-8 pointer-events-none hidden lg:block">
-          <div className="grid grid-cols-6 gap-2.5">
+          <div className="grid grid-cols-6 gap-2.5" style={{ filter: 'blur(2px)' }}>
             {Array.from({ length: 36 }).map((_, i) => (
-              <div key={i} className="w-1.5 h-1.5 rounded-full bg-brand-purple opacity-20" />
+              <div key={i} className="w-1.5 h-1.5 rounded-full bg-brand-purple opacity-18" />
             ))}
           </div>
         </div>
 
         {/* Small decorative dots */}
-        <div className="absolute top-40 right-[38%] w-3 h-3 rounded-full bg-brand-pink opacity-60 pointer-events-none hidden lg:block" />
-        <div className="absolute bottom-32 right-[52%] w-2 h-2 rounded-full bg-brand-purple opacity-50 pointer-events-none hidden lg:block" />
-        <div className="absolute bottom-24 right-16 w-4 h-4 rounded-full bg-brand-purple opacity-30 pointer-events-none hidden lg:block" />
+        <div className="absolute top-40 right-[38%] w-3 h-3 rounded-full bg-brand-pink opacity-50 pointer-events-none hidden lg:block" style={{ filter: 'blur(1.5px)' }} />
+        <div className="absolute bottom-32 right-[52%] w-2 h-2 rounded-full bg-brand-purple opacity-40 pointer-events-none hidden lg:block" style={{ filter: 'blur(1px)' }} />
+        <div className="absolute bottom-24 right-16 w-4 h-4 rounded-full bg-brand-purple opacity-25 pointer-events-none hidden lg:block" style={{ filter: 'blur(1.5px)' }} />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
@@ -102,12 +102,13 @@ export default function Hero() {
 
               {/* Dark blurry purple shadow mid-behind laptop */}
               <div
-                className="absolute w-[360px] h-[180px] rounded-full bg-purple-950/30 pointer-events-none"
+                className="absolute w-[460px] h-[220px] rounded-full bg-purple-950/45 pointer-events-none"
                 style={{
-                  top: '52%',
-                  transform: 'translateY(-10%)',
-                  filter: 'blur(34px)',
-                  opacity: 0.8,
+                  left: '50%',
+                  top: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  filter: 'blur(46px)',
+                  opacity: 0.95,
                 }}
               />
 
