@@ -102,12 +102,12 @@ export default function Hero() {
 
               {/* Dark blurry purple shadow mid-behind laptop */}
               <div
-                className="absolute w-[340px] h-[160px] rounded-full bg-purple-900/20 pointer-events-none"
+                className="absolute w-[360px] h-[180px] rounded-full bg-purple-950/30 pointer-events-none"
                 style={{
                   top: '52%',
                   transform: 'translateY(-10%)',
-                  filter: 'blur(28px)',
-                  opacity: 0.65,
+                  filter: 'blur(34px)',
+                  opacity: 0.8,
                 }}
               />
 
