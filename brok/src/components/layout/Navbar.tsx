@@ -89,7 +89,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-2.5">
             <button
               onClick={() => setLoginOpen(true)}
-              className="border-2 border-brand-white text-brand-white text-navy text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-white  hover:text-navy transition-colors cursor-pointer"
+              className="border-2 border-brand-white text-brand-white text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-white  hover:text-white transition-colors cursor-pointer"
             >
               Login
             </button>
