@@ -30,6 +30,7 @@
     background-color: #ffffff;
     color: #1a1f4e;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 }
 

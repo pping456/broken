@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Who We Are</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            AZHly (AZH Timely) is a Pakistan-based EdTech company dedicated to transforming how educational institutions manage their campus operations. Founded in 2023, we started with a simple vision: eliminate the chaos of manual timetabling and room management in universities and colleges.
+            AZHly (AZH Timely) is an innovative campus management solution designed to simplify timetable generation, room allocation, and academic scheduling. Established in 2026.
           </p>
           <p className="text-gray-600 leading-relaxed">
             Our platform serves universities, colleges, and institutes across Pakistan, helping administrators, faculty, and students stay organized, informed, and connected — all through a single intelligent platform.
@@ -23,7 +23,7 @@ export default function AboutPage() {
         </div>
         <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 flex flex-col justify-center">
           <div className="grid grid-cols-2 gap-6">
-            {[['500+', 'Institutions'], ['50,000+', 'Active Users'], ['99.9%', 'Uptime SLA'], ['2023', 'Founded']].map(([val, label]) => (
+            {[['500+', 'Institutions'], ['50,000+', 'Active Users'], ['99.9%', 'Uptime SLA'], ['2026', 'Founded']].map(([val, label]) => (
               <div key={label} className="text-center">
                 <p className="text-3xl font-extrabold text-brand-blue">{val}</p>
                 <p className="text-sm text-gray-500 mt-1">{label}</p>
@@ -82,13 +82,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-brand-blue to-brand-teal rounded-2xl p-10 text-center text-white">
-        <h2 className="text-2xl font-bold mb-3">Join 500+ Institutions Using AZHly</h2>
-        <p className="text-blue-100 mb-6">Start your 14-day free trial today. No credit card required.</p>
-        <a href="/#pricing" className="inline-block bg-white text-brand-blue font-bold px-8 py-3 rounded-full hover:bg-blue-50 transition-colors">
-          Get Started Free
-        </a>
-      </div>
     </PageWrapper>
   )
 }
