@@ -78,11 +78,32 @@ export default function Hero() {
               {/* Blurry purple orbit ring behind laptop */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div
-                  className="w-[560px] h-[560px] rounded-full border border-purple-300/30"
+                  className="w-[560px] h-[560px] rounded-full border border-purple-300/60"
                   style={{
-                    filter: 'blur(28px)',
-                    boxShadow: '0 0 120px rgba(124,58,237,0.22), 0 0 80px rgba(168,85,247,0.18)',
+                    filter: 'blur(18px)',
+                    boxShadow: '0 0 100px rgba(124,58,237,0.22), 0 0 60px rgba(168,85,247,0.18)',
                     transform: 'scale(1.02)'
+                  }}
+                />
+                <div
+                  className="absolute w-[640px] h-[640px] rounded-full border border-purple-300/40"
+                  style={{
+                    boxShadow: '0 0 40px rgba(147,112,219,0.18)',
+                    opacity: 0.65,
+                  }}
+                />
+                <div
+                  className="absolute w-[520px] h-[520px] rounded-full border border-purple-200/80 border-dashed"
+                  style={{
+                    transform: 'rotate(15deg)',
+                    opacity: 0.8,
+                  }}
+                />
+                <div
+                  className="absolute w-[440px] h-[440px] rounded-full border border-fuchsia-300/70 border-dashed"
+                  style={{
+                    transform: 'rotate(-18deg)',
+                    opacity: 0.65,
                   }}
                 />
               </div>
