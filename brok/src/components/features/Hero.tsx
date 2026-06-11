@@ -108,6 +108,16 @@ export default function Hero() {
                 />
               </div>
 
+              {/* Laptop image shadow */}
+              <div
+                className="absolute -bottom-8 w-[320px] h-[60px] rounded-full bg-purple-500/20 blur-3xl pointer-events-none"
+                style={{
+                  filter: 'blur(22px)',
+                  opacity: 0.65,
+                  transform: 'translateY(10px)'
+                }}
+              />
+
               {/* Laptop image */}
               <img
                 src={laptopImg}
