@@ -66,9 +66,9 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold text-gray-900 mb-8">Our Team</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { name: 'Muhammad Azhar', role: 'Co-Founder & CEO', desc: 'Computer Science graduate with 8+ years in EdTech and software development.' },
-            { name: 'Hafiz Hamza', role: 'Co-Founder & CTO', desc: 'Full-stack developer specializing in cloud infrastructure and real-time systems.' },
-            { name: 'Zainab Malik', role: 'Head of Product', desc: 'UX expert focused on building intuitive experiences for educational institutions.' },
+            { name: 'Zunaira Javed', role: 'Frontend Developer', desc: 'Built the responsive web interface using React, Vite, and Tailwind CSS, ensuring a modern and user-friendly experience.' },
+            { name: 'Haleema Akram', role: 'Mobile App Developer', desc: 'Developed the cross-platform mobile application using Flutter with a focus on performance and usability.' },
+            { name: 'Areeba Shahid', role: 'Backend Developer', desc: 'Designed and implemented backend services using Spring Boot and MySQL, managing APIs, database operations, and core system functionality.' },
           ].map((m) => (
             <div key={m.name} className="text-center bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-100 to-green-100 flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-brand-blue">
