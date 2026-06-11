@@ -112,6 +112,13 @@ export default function Hero() {
                 }}
               />
 
+              {/* Tiny decorative dots near the laptop */}
+              <div className="absolute w-full h-full pointer-events-none lg:block hidden">
+                <div className="absolute -top-6 -right-10 w-3 h-3 rounded-full bg-brand-pink opacity-60" style={{ filter: 'blur(1.8px)' }} />
+                <div className="absolute top-6 -right-6 w-2 h-2 rounded-full bg-brand-purple opacity-50" style={{ filter: 'blur(1.2px)' }} />
+                <div className="absolute bottom-8 -left-6 w-4 h-4 rounded-full bg-brand-purple opacity-30" style={{ filter: 'blur(1.6px)' }} />
+              </div>
+
               {/* Laptop image */}
               <img
                 src={laptopImg}
