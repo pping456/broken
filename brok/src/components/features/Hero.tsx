@@ -69,52 +69,45 @@ export default function Hero() {
 
             {/* Right: Laptop image */}
             <div className="relative flex justify-center items-center">
-              {/* Purple glow blob behind laptop */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-[420px] h-[420px] rounded-full"
-                  style={{ background: 'radial-gradient(circle, rgba(147,112,219,0.25) 0%, rgba(124,58,237,0.12) 40%, transparent 70%)' }} />
-              </div>
-
-              {/* Blurry purple orbit ring behind laptop */}
+              {/* Smaller orbit rings behind laptop */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div
-                  className="w-[560px] h-[560px] rounded-full border border-purple-300/60"
+                  className="absolute w-[420px] h-[420px] rounded-full border border-purple-300/35"
                   style={{
-                    filter: 'blur(18px)',
-                    boxShadow: '0 0 100px rgba(124,58,237,0.22), 0 0 60px rgba(168,85,247,0.18)',
-                    transform: 'scale(1.02)'
+                    filter: 'blur(16px)',
+                    opacity: 0.75,
                   }}
                 />
                 <div
-                  className="absolute w-[640px] h-[640px] rounded-full border border-purple-300/40"
+                  className="absolute w-[360px] h-[360px] rounded-full border border-purple-200/70 border-dashed"
                   style={{
-                    boxShadow: '0 0 40px rgba(147,112,219,0.18)',
-                    opacity: 0.65,
+                    transform: 'rotate(12deg)',
+                    opacity: 0.72,
                   }}
                 />
                 <div
-                  className="absolute w-[520px] h-[520px] rounded-full border border-purple-200/80 border-dashed"
+                  className="absolute w-[300px] h-[300px] rounded-full border border-fuchsia-200/70 border-dashed"
                   style={{
-                    transform: 'rotate(15deg)',
-                    opacity: 0.8,
+                    transform: 'rotate(-14deg)',
+                    opacity: 0.62,
                   }}
                 />
                 <div
-                  className="absolute w-[440px] h-[440px] rounded-full border border-fuchsia-300/70 border-dashed"
+                  className="absolute w-[250px] h-[250px] rounded-full border border-purple-300/40"
                   style={{
-                    transform: 'rotate(-18deg)',
-                    opacity: 0.65,
+                    opacity: 0.55,
                   }}
                 />
               </div>
 
-              {/* Laptop image shadow */}
+              {/* Dark blurry purple shadow mid-behind laptop */}
               <div
-                className="absolute -bottom-8 w-[320px] h-[60px] rounded-full bg-purple-500/20 blur-3xl pointer-events-none"
+                className="absolute w-[340px] h-[160px] rounded-full bg-purple-900/20 pointer-events-none"
                 style={{
-                  filter: 'blur(22px)',
+                  top: '52%',
+                  transform: 'translateY(-10%)',
+                  filter: 'blur(28px)',
                   opacity: 0.65,
-                  transform: 'translateY(10px)'
                 }}
               />
 
