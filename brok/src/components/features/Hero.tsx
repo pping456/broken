@@ -70,10 +70,22 @@ export default function Hero() {
             {/* Right: Laptop image */}
             <div className="relative flex justify-center items-center">
               {/* Purple glow blob behind laptop */}
-             {/* <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div className="w-[420px] h-[420px] rounded-full"
                   style={{ background: 'radial-gradient(circle, rgba(147,112,219,0.25) 0%, rgba(124,58,237,0.12) 40%, transparent 70%)' }} />
-              </div>*/}
+              </div>
+
+              {/* Blurry purple orbit ring behind laptop */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div
+                  className="w-[560px] h-[560px] rounded-full border border-purple-300/30"
+                  style={{
+                    filter: 'blur(28px)',
+                    boxShadow: '0 0 120px rgba(124,58,237,0.22), 0 0 80px rgba(168,85,247,0.18)',
+                    transform: 'scale(1.02)'
+                  }}
+                />
+              </div>
 
               {/* Laptop image */}
               <img
