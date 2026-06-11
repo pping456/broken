@@ -82,24 +82,7 @@ export default function Hero() {
                 className="relative w-full max-w-[580px] object-contain drop-shadow-2xl z-10"
               />
 
-              {/* Plant decoration */}
-              <div className="absolute bottom-4 right-4 z-20 hidden lg:block select-none">
-                <svg width="64" height="72" viewBox="0 0 64 72" fill="none">
-                  {/* Pot */}
-                  <ellipse cx="32" cy="66" rx="14" ry="5" fill="#d1fae5" />
-                  <path d="M20 58 L22 66 H42 L44 58 Z" fill="#a7f3d0" />
-                  <ellipse cx="32" cy="58" rx="12" ry="5" fill="#6ee7b7" />
-                  <ellipse cx="32" cy="58" rx="12" ry="5" fill="white" opacity="0.3" />
-                  {/* Stem */}
-                  <line x1="32" y1="58" x2="32" y2="28" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" />
-                  {/* Leaves */}
-                  <ellipse cx="32" cy="32" rx="14" ry="8" fill="#22c55e" transform="rotate(-30 32 32)" />
-                  <ellipse cx="32" cy="32" rx="14" ry="8" fill="#4ade80" transform="rotate(30 32 32)" />
-                  <ellipse cx="32" cy="20" rx="11" ry="7" fill="#22c55e" transform="rotate(-15 32 20)" />
-                  <ellipse cx="32" cy="20" rx="11" ry="7" fill="#4ade80" transform="rotate(15 32 20)" />
-                  <ellipse cx="32" cy="10" rx="8" ry="6" fill="#16a34a" />
-                </svg>
-              </div>
+           
             </div>
 
           </div>
