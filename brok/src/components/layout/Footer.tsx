@@ -91,6 +91,25 @@ export default function Footer() {
                 </p>
               ))}
             </div>
+
+            <div className="mt-8">
+              <h4 className="font-bold text-white text-sm mb-4">Stay Updated</h4>
+              <p className="text-xs text-blue-300 mb-3 leading-relaxed">
+                Get the latest news, updates, and tips from AZHly.
+              </p>
+              <div className="flex gap-1">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="flex-1 text-sm bg-white/10 border border-white/20 rounded-l-lg px-3 py-2 outline-none focus:border-brand-purple text-white placeholder-blue-300"
+                />
+                <button className="bg-brand-pink text-white px-3 py-2 rounded-r-lg hover:bg-pink-600 transition-colors">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* Links */}
@@ -109,26 +128,6 @@ export default function Footer() {
               </ul>
             </div>
           ))}
-
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-bold text-white text-sm mb-4">Stay Updated</h4>
-            <p className="text-xs text-blue-300 mb-3 leading-relaxed">
-              Get the latest news, updates, and tips from AZHly.
-            </p>
-            <div className="flex gap-1">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 text-sm bg-white/10 border border-white/20 rounded-l-lg px-3 py-2 outline-none focus:border-brand-purple text-white placeholder-blue-300"
-              />
-              <button className="bg-brand-pink text-white px-3 py-2 rounded-r-lg hover:bg-pink-600 transition-colors">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
 
