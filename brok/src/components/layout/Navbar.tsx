@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import logoImg from '@/assets/azhly-logo.png'
-import LoginModal from '@/components/features/LoginModal'
-import RegisterModal from '@/components/features/RegisterModal'
-
+import 
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Features', href: '#features' },
@@ -17,10 +15,8 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [loginOpen, setLoginOpen] = useState(false)
   const [registerOpen, setRegisterOpen] = useState(false)
-  const [activeLink, setActiveLink] = useState('#home')
-  const navigate = useNavigate()
+  const [avigate = useNavigate()
   const location = useLocation()
 
   useEffect(() => {
@@ -88,10 +84,10 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-2.5">
             <button
-              onClick={() => setLoginOpen(true)}
-              className="border-2 border-brand-white text-brand-white text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-white  hover:text-white transition-colors cursor-pointer"
-            >
-              Login
+              onClick={() => navigate('/login')}
+              className="border-2 border-brand-white text-brand-white text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-white hover:text-white transition-colors cursor-pointer"
+            >navigate('/login')}
+              className="border-2 border-brand-white text-brand-white text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-white
             </button>
             <button
               onClick={() => setRegisterOpen(true)}
@@ -132,9 +128,9 @@ export default function Navbar() {
               ))}
               <li className="px-6 py-3 flex flex-col gap-2">
                 <button
-                  onClick={() => { setLoginOpen(true); setMobileOpen(false) }}
+                  onClick={() => { navigate('/login'); setMobileOpen(false) }}
                   className="w-full border-2 border-brand-navy text-brand-navy text-sm font-semibold px-5 py-2.5 rounded-full"
-                >
+                >navigate('/login'
                   Login
                 </button>
                 <button
@@ -149,8 +145,6 @@ export default function Navbar() {
         )}
       </nav>
 
-      <LoginModal isOpen={loginOpen} onClose={() => setLoginOpen(false)} onSwitchToRegister={() => { setLoginOpen(false); setRegisterOpen(true) }} />
-      <RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); setLoginOpen(true) }} />
+      <RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); navigate('/login') }} />
     </>
-  )
-}
+  )RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); navigate('/login'

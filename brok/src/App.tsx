@@ -20,6 +20,7 @@ import PrivacyPage from '@/pages/PrivacyPage'
 import TermsPage from '@/pages/TermsPage'
 import HelpPage from '@/pages/HelpPage'
 import DocsPage from '@/pages/DocsPage'
+import LoginPage from '@/pages/LoginPage'
 import TutorialsPage from '@/pages/TutorialsPage'
 import ContactSupportPage from '@/pages/ContactSupportPage'
 import StatusPage from '@/pages/StatusPage'
@@ -75,6 +76,8 @@ export default function App() {
         <Route path="/tutorials" element={<TutorialsPage />} />
         <Route path="/contact-support" element={<ContactSupportPage />} />
         <Route path="/status" element={<StatusPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<LandingPage />} />
       </Routes>
     </BrowserRouter>

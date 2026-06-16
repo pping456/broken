@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import laptopImg from '@/assets/azhly-laptop.png'
-import LoginModal from '@/components/features/LoginModal'
+import { useNavigate } from 'react-router-dom'
+import laptopImg from '@/assets/azhly-laptop.png
 import RegisterModal from '@/components/features/RegisterModal'
 
 export default function Hero() {
-  const [loginOpen, setLoginOpen] = useState(false)
   const [registerOpen, setRegisterOpen] = useState(false)
+  const navigate = useNavigate(
 
   return (
     <>
@@ -50,7 +50,7 @@ export default function Hero() {
               {/* Buttons */}
               <div className="flex flex-wrap gap-3.5">
                 <button
-                  onClick={() => setLoginOpen(true)}
+                  onClick={() => navigate('/login')}
                   className="bg-brand-navy hover:bg-brand-navyDark text-white font-semibold px-8 py-3.5 rounded-full flex items-center gap-2 shadow-md transition-colors"
                 >
                   Login
@@ -133,8 +133,6 @@ export default function Hero() {
         </div>
       </section>
 
-      <LoginModal isOpen={loginOpen} onClose={() => setLoginOpen(false)} onSwitchToRegister={() => { setLoginOpen(false); setRegisterOpen(true) }} />
-      <RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); setLoginOpen(true) }} />
-    </>
+      <RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); navigate('/login'
   )
 }
