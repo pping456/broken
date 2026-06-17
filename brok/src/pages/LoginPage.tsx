@@ -1,4 +1,5 @@
 import AnimatedVisual from '@/components/features/AnimatedVisual'
+import laptopImg from '@/assets/azhly-laptop.png'
 import LoginCard from '@/components/features/LoginCard'
 
 export default function LoginPage() {
@@ -13,7 +14,7 @@ export default function LoginPage() {
 
       <div className="relative z-10 flex flex-col lg:flex-row w-full min-h-screen">
         <div className="flex-1 flex flex-col items-center justify-center p-8 lg:p-12 lg:pl-12 min-h-[55vh] lg:min-h-screen">
-          <AnimatedVisual />
+          <AnimatedVisual laptopImg={laptopImg} />
 
           <div className="mt-10 lg:mt-14 flex flex-wrap justify-center gap-10 w-full max-w-2xl">
             <FeatureCallout icon="🕐" title="Smart Scheduling" desc="Plan your classes efficiently" />

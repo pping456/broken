@@ -6,13 +6,7 @@ const bubbleItems = [
   { label: 'Cloud Based', icon: '☁️', className: 'bottom-16 right-20 w-14 h-14 animate-float-d' },
 ]
 
-import type { StaticImageData } from 'vite'
-
-interface AnimatedVisualProps {
-  laptopImg: StaticImageData | string
-}
-
-export default function AnimatedVisual({ laptopImg }: AnimatedVisualProps) {
+export default function AnimatedVisual({ laptopImg }: { laptopImg: string | any }) {
   return (
     <div className="relative w-full max-w-xl px-4 lg:px-0">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
