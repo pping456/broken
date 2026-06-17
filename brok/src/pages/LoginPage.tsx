@@ -7,6 +7,7 @@ export default function LoginPage() {
     <div className="relative min-h-screen w-full overflow-hidden flex items-stretch bg-[#050214] text-white" style={{ fontFamily: "'Inter', sans-serif" }}>
       {/* Background */}
       <div className="absolute inset-0 z-0">
+        <img src="/city-bg.jpg" alt="city background" className="w-full h-full object-cover brightness-80 blur-sm" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(139,92,246,0.25),_transparent_38%)]" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a041a]/92 via-[#0d0820]/85 to-[#06021a]/88" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a041a]/70" />
