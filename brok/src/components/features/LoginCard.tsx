@@ -14,9 +14,9 @@ export default function LoginCard() {
   return (
     <div className="glass-card w-full max-w-[520px] rounded-[32px] border border-white/10 p-8 shadow-2xl backdrop-blur-xl">
       <div className="text-center mb-8">
-        <img src={logoImg} alt="AZHly" className="mx-auto h-10 mb-5" />
-        <h1 className="text-3xl font-bold text-white">Welcome Back!</h1>
-        <p className="text-sm text-white/60 mt-3">Sign in to continue to your dashboard</p>
+        <img src={logoImg} alt="AZHly" className="mx-auto h-12 mb-6" />
+        <h1 className="text-4xl font-bold text-white">Welcome Back!</h1>
+        <p className="text-sm text-white/50 mt-3">Sign in to continue to your dashboard</p>
       </div>
 
       <button
