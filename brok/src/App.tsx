@@ -77,7 +77,6 @@ export default function App() {
         <Route path="/contact-support" element={<ContactSupportPage />} />
         <Route path="/status" element={<StatusPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<LandingPage />} />
       </Routes>
     </BrowserRouter>

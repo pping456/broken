@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import laptopImg from '@/assets/azhly-laptop.png
+import laptopImg from '@/assets/azhly-laptop.png'
 import RegisterModal from '@/components/features/RegisterModal'
 
 export default function Hero() {
   const [registerOpen, setRegisterOpen] = useState(false)
-  const navigate = useNavigate(
+  const navigate = useNavigate()
 
   return (
     <>
@@ -133,6 +133,7 @@ export default function Hero() {
         </div>
       </section>
 
-      <RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); navigate('/login'
+      <RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); navigate('/login') }} />
+    </>
   )
 }

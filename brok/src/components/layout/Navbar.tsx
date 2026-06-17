@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import logoImg from '@/assets/azhly-logo.png'
-import 
+import RegisterModal from '@/components/features/RegisterModal'
+
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Features', href: '#features' },
@@ -16,7 +17,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [registerOpen, setRegisterOpen] = useState(false)
-  const [avigate = useNavigate()
+  const [activeLink, setActiveLink] = useState('#home')
+  const navigate = useNavigate()
   const location = useLocation()
 
   useEffect(() => {
@@ -86,8 +88,8 @@ export default function Navbar() {
             <button
               onClick={() => navigate('/login')}
               className="border-2 border-brand-white text-brand-white text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-white hover:text-white transition-colors cursor-pointer"
-            >navigate('/login')}
-              className="border-2 border-brand-white text-brand-white text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-brand-white
+            >
+              Login
             </button>
             <button
               onClick={() => setRegisterOpen(true)}
@@ -130,7 +132,7 @@ export default function Navbar() {
                 <button
                   onClick={() => { navigate('/login'); setMobileOpen(false) }}
                   className="w-full border-2 border-brand-navy text-brand-navy text-sm font-semibold px-5 py-2.5 rounded-full"
-                >navigate('/login'
+                >
                   Login
                 </button>
                 <button
@@ -147,4 +149,5 @@ export default function Navbar() {
 
       <RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); navigate('/login') }} />
     </>
-  )RegisterModal isOpen={registerOpen} onClose={() => setRegisterOpen(false)} onSwitchToLogin={() => { setRegisterOpen(false); navigate('/login'
+  )
+}
