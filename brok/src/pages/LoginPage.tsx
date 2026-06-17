@@ -7,20 +7,25 @@ export default function LoginPage() {
     <div className="relative min-h-screen w-full overflow-hidden flex items-stretch bg-[#050214] text-white" style={{ fontFamily: "'Inter', sans-serif" }}>
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img src="/city-bg.jpg" alt="city background" className="w-full h-full object-cover brightness-80 blur-sm" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(139,92,246,0.25),_transparent_38%)]" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a041a]/92 via-[#0d0820]/85 to-[#06021a]/88" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a041a]/70" />
       </div>
 
       <div className="relative z-10 flex flex-col lg:flex-row w-full min-h-screen">
-        <div className="flex-1 flex flex-col items-center justify-center p-8 lg:p-12 lg:pl-12 min-h-[55vh] lg:min-h-screen">
-          <AnimatedVisual laptopImg={laptopImg} />
+        <div className="flex-1 p-0 lg:p-4">
+          <div className="relative w-full h-full min-h-[55vh] lg:min-h-screen flex items-center justify-center">
+            <img src="/city-bg.jpg" alt="city background" className="absolute inset-0 w-full h-full object-cover brightness-80 blur-sm" />
 
-          <div className="mt-10 lg:mt-14 flex flex-wrap justify-center gap-10 w-full max-w-2xl">
-            <FeatureCallout icon="🕐" title="Smart Scheduling" desc="Plan your classes efficiently" />
-            <FeatureCallout icon="🔔" title="Real-time Updates" desc="Stay updated with latest changes" />
-            <FeatureCallout icon="👥" title="Smarter Spaces" desc="Find the best spaces instantly" />
+            <div className="relative z-10 w-full flex flex-col items-center justify-center p-8 lg:p-12 lg:pl-12">
+              <AnimatedVisual laptopImg={laptopImg} />
+
+              <div className="mt-10 lg:mt-14 flex flex-wrap justify-center gap-10 w-full max-w-2xl">
+                <FeatureCallout icon="🕐" title="Smart Scheduling" desc="Plan your classes efficiently" />
+                <FeatureCallout icon="🔔" title="Real-time Updates" desc="Stay updated with latest changes" />
+                <FeatureCallout icon="👥" title="Smarter Spaces" desc="Find the best spaces instantly" />
+              </div>
+            </div>
           </div>
         </div>
 
